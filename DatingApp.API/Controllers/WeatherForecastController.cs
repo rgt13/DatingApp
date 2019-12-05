@@ -35,8 +35,9 @@ namespace DatingApp.API.Controllers
             _logger = logger;
         }
 */
+        [AllowAnonymous]
         [HttpGet]
-        public async Task<IActionResult> GetForecastsAsync()
+        public async Task<IActionResult> GetForecasts()
         {
             var forecasts = await _context.WeatherForecasts.ToListAsync();
             return Ok(forecasts);
