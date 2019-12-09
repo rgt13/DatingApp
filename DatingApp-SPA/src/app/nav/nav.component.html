@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Dating App</a>
-
-    <ul class="navbar-nav mr-auto">
+  <div class="container">
+      <a class="navbar-brand" href="#">Dating App</a>
+    <ul class="navbar-nav mr-auto" *ngIf="loggedIn()">
       <li class="nav-item active">
         <a class="nav-link" href="#">Matches</a>
       </li>
@@ -16,14 +16,14 @@
       </li>
     </ul>
 
-    <div class="dropdown" *ngIf="loggedIn()">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fad fa-glass-martini"></i>Welcome, User!
+    <div class="dropdown" *ngIf="loggedIn()" dropdown>
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle>
+        Welcome, {{authService.decodedToken.unique_name | titlecase}}!
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" *dropdownMenu>
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" (ngSubmit)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
+        <a class="dropdown-item" href="#" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
       </div>
     </div>
 
@@ -32,4 +32,6 @@
       <input class="form-control mr-sm-2" type="password" name="password" #password="ngModel" placeholder="Password" required [(ngModel)]="model.password">
       <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
     </form>
+  </div>
+
 </nav>
