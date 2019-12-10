@@ -15,9 +15,7 @@ export class AuthGuard implements CanActivate {
     private alertify: AlertifyService
     ) {}
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canActivate(): boolean {
     if (this.authService.loggedIn()) {
       return true;
     }
