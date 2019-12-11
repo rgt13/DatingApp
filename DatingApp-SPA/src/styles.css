@@ -6,6 +6,10 @@
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
 @import '../node_modules/bootswatch/dist/solar/bootstrap.min.css';
 
+.form-control .dblue {
+  background-color: #ffffff;
+}
+
 /* 
 .tab-panel {
     border: 1px solid #ddd;
