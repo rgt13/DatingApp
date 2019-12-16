@@ -19,8 +19,12 @@
     </ul>
 
     <div class="dropdown" *ngIf="loggedIn()" dropdown>
+      
       <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle>
-        Welcome, {{authService.decodedToken.unique_name | titlecase}}!
+          <!-- <span> -->
+              <img src="{{photoUrl}}" alt="">
+          <!-- </span> -->
+           Welcome, {{authService.decodedToken.unique_name | titlecase}}!
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" *dropdownMenu>
         <a class="dropdown-item" [routerLink]="['/member/edit']"><i class="fa fa-user"></i> Edit Profile</a>

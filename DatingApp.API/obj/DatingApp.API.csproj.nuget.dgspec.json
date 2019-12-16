@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj": {}
+    "C:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj": {
+    "C:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "c:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj",
+        "projectPath": "C:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\rgt21\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\obj\\",
+        "outputPath": "C:\\Users\\rgt21\\Angular\\first-app\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -44,6 +44,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.9.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

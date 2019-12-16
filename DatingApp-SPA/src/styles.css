@@ -4,7 +4,7 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
-@import '../node_modules/bootswatch/dist/solar/bootstrap.min.css';
+@import '../node_modules/bootswatch/dist/minty/bootstrap.min.css';
 
 .form-control .dblue {
   background-color: #ffffff;
