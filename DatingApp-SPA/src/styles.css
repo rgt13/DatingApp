@@ -1,10 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+ /* You can add global styles to this file, and also import other style files */
 
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
 @import '../node_modules/bootswatch/dist/minty/bootstrap.min.css';
+@import '../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css';
+/* @import '../node_modules/startbootstrap-freelancer/css/freelancer.css'; */
+/* @import '../node_modules/material-dashboard/assets/css/material-dashboard.css'; */
+/* @import '../node_modules/black-dashboard-angular/documentation/black-dashboard.css'; */
 
 .form-control .dblue {
   background-color: #ffffff;

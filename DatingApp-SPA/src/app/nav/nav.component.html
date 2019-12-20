@@ -22,11 +22,11 @@
       
       <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dropdownToggle>
           <!-- <span> -->
-              <img src="{{photoUrl}}" alt="">
+              <img src="{{photoUrl || '../../assets/user.png'}}" alt="">
           <!-- </span> -->
            Welcome, {{authService.decodedToken.unique_name | titlecase}}!
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" *dropdownMenu>
+      <div class="dropdown-menu right" aria-labelledby="dropdownMenuButton" *dropdownMenu>
         <a class="dropdown-item" [routerLink]="['/member/edit']"><i class="fa fa-user"></i> Edit Profile</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
